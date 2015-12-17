@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/robie1373/chooseYourOwnAdventureTalk/issues"
   },
-  "homepage": "https://github.com/robie1373/chooseYourOwnAdventureTalk#readme"
+  "homepage": "https://github.com/robie1373/chooseYourOwnAdventureTalk#readme",
+  "dependencies": {
+    "requirejs": "^2.1.22"
+  }
 }
