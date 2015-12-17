@@ -19,6 +19,36 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lobster', cursive;
 }
 
+.slideTitle {
+  text-transform: capitalize;
+}
+
+.singleText, .columnText {
+  font-size: 2em;
+}
+
+.slideTitle {
+  font-size: 3em;
+}
+
+.slideSubtitle {
+  font-size: 2em;
+}
+
+@-webkit-keyframes navWiggle {
+  from { background-color: lightgrey; }
+  to { background-color: lightblue; }
+}
+
+.navImg {
+  -webkit-animation-name: navWiggle;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 20px;

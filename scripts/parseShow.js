@@ -42,10 +42,10 @@ define(["jq_stuff", "createSlides"], function(postResult, createSlides) {
           var nextSlide = structMap.show.slides[1];
         $("#hints").append("<div id='" + linkName + "HintDiv' class='col-1-3'></div>");
         if (thisSlide.children[linkName])
-          $("#" + linkName + "HintDiv").append("<h4 class='nav' id='" + linkName + "Hint'>" + nextSlide.hint + "</h4>");
+          $("#" + linkName + "HintDiv").append("<h2 class='nav' id='" + linkName + "Hint'>" + nextSlide.hint + "</h2>");
         else
           $("#" + linkName + "Hint").hide()
-        $("#links").append("<div id='" + linkName + "LinkDiv' class='col-1-3'><img src='assets/" + linkName + ".png' hieght='100' width='100' id='" + linkName + "Link'></div>")
+        $("#links").append("<div id='" + linkName + "LinkDiv' class='col-1-3'><img src='assets/" + linkName + ".png' hieght='100' width='100' id='" + linkName + "Link' class='navImg'></div>")
       }
 
       function attachNavEvent(linkName) {
