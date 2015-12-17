@@ -40,8 +40,6 @@ define(["jq_stuff", "createSlides"], function(postResult, createSlides) {
           var nextSlide = structMap.show.slides[thisSlide.children[linkName]];
         else
           var nextSlide = structMap.show.slides[1];
-        console.log("this is slide " + thisSlide.sid)
-        console.log(linkName + " " + nextSlide.hint + " " + nextSlide.slideData.title);
         $("#hints").append("<div id='" + linkName + "HintDiv' class='col-1-3'></div>");
         if (thisSlide.children[linkName])
           $("#" + linkName + "HintDiv").append("<h4 class='nav' id='" + linkName + "Hint'>" + nextSlide.hint + "</h4>");
