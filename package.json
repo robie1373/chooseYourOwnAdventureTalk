@@ -1,0 +1,19 @@
+{
+  "name": "choose-your-own-adventure-talk",
+  "version": "0.0.1",
+  "description": "a simple web-based choose your own adventure framework for presentations. The goal is to get the audience involved and let them choose the path of the talk. They vote by throwing signs in the air. Couldn't be simpler.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robie1373/chooseYourOwnAdventureTalk.git"
+  },
+  "author": "Robie Lutsey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robie1373/chooseYourOwnAdventureTalk/issues"
+  },
+  "homepage": "https://github.com/robie1373/chooseYourOwnAdventureTalk#readme"
+}
