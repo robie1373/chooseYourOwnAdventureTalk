@@ -23,9 +23,10 @@ See License.txt
    1. Adventure creation page
    2. Save adventure
    3. Upload adventure
-   4. More slide formats
-   5. Slide effects like bullets appearing and star wipes! (Yeah, you heard me.)
-   6. Modularize navigation function to a plugin type thingy. This way the simple hand gesture interface could be swapped for an audience web interface that would allow them to vote on direction.
+   4. run uploads through https://www.owasp.org/index.php/OWASP_JSON_Sanitizer
+   5. More slide formats
+   6. Slide effects like bullets appearing and star wipes! (Yeah, you heard me.)
+   7. Modularize navigation function to a plugin type thingy. This way the simple hand gesture interface could be swapped for an audience web interface that would allow them to vote on direction.
 
 ## Changelog
 
