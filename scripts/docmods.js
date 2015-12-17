@@ -1,13 +1,13 @@
 define(['jq_stuff', 'parseShow'], function(jq_stuff, parseShow) {
 
-  $(document).ready(function() {
-    $("p").hover(function() {
-      $(this).fadeTo("slow", 0.25);
-    },
-    function() {
-      $(this).fadeTo("fast", 1.00);
-    });
-  });
+  // $(document).ready(function() {
+  //   $("p").hover(function() {
+  //     $(this).fadeTo("slow", 0.25);
+  //   },
+  //   function() {
+  //     $(this).fadeTo("fast", 1.00);
+  //   });
+  // });
 
   $(document).ready(function() {
     $("pre").hover(function() {
