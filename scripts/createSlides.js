@@ -17,7 +17,7 @@ define(function() {
     slide0["slideData"]["subtitle"]=encodeURIComponent("Please stand by.");
 
     slide1["sid"] = "1";
-    slide1["hint"]=encodeURIComponent("Back to the beginning");
+    slide1["hint"]=encodeURIComponent("To the beginning");
     slide1["children"]={};
     slide1["children"]["fist"]=2;
     slide1["children"]["hand"]=3;
