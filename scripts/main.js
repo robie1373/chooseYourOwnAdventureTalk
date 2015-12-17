@@ -1,2 +1,2 @@
 
-requirejs(["jq_stuff", 'parseShow', 'docmods', 'createSlides']); 
+requirejs(["jq_stuff", 'parseShow', 'docmods', 'createSlides', 'xss-filters']); 
