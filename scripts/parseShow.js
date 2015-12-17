@@ -1,4 +1,4 @@
-define(["jq_stuff", "createSlides", "xss-filters"], function(postResult, createSlides, xssFilters) {
+define(["jq_stuff", "createSlides", "../node_modules/xss-filters/dist/xss-filters"], function(postResult, createSlides, xssFilters) {
  
   structMap = createSlides();
   // console.log(JSON.stringify(structMap));
