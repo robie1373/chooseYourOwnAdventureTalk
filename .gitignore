@@ -1,3 +1,4 @@
+*.swp
 .DS_Store
 temp/*
 node_modules/*

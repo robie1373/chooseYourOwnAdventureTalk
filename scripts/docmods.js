@@ -1,4 +1,4 @@
-define(['jq_stuff', 'parseShow'], function(jq_stuff, parseShow) {
+define(['jq_stuff', 'runShow'], function(jq_stuff, runShow) {
 
   // $(document).ready(function() {
   //   $("p").hover(function() {
