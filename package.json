@@ -23,6 +23,7 @@
     "xss-filters": "^1.2.6"
   },
   "devDependencies": {
+    "buster-test": "^0.7.14",
     "expect": "^1.13.4"
   }
 }
