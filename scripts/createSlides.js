@@ -33,7 +33,7 @@ define(function() {
     slide2["children"]["hand"]=5;
     slide2["slideData"]={};
     slide2["slideData"]["title"]=encodeURIComponent("Nature");
-    slide2["slideData"]["singleText"]=encodeURIComponent("Nature is full of funky stuff. Some of it is good to eat, some of it is fun to throw.<br>Some good to eat things are:<br>* Carrots<br>* Milk<br>* Honey");
+    slide2["slideData"]["singleText"]=("Nature's full of funky stuff. Some of it is good to eat, some of it is fun to throw.\nSome good to eat things are:\n* Carrots\n* Milk\n* Honey");
 
     slide3["sid"] = "3";
     slide3["hint"]=encodeURIComponent("Wha? Pokey balls?");
@@ -52,7 +52,7 @@ define(function() {
     slide4["children"]["fist"]=1;
     slide4["slideData"]={};
     slide4["slideData"]["title"]=encodeURIComponent("Things that are good to eat");
-    slide4["slideData"]["singleText"]=encodeURIComponent("* Carrots - Orange things are not always oranges.<br>* Milk - Cows way of saying Thanks for not eating me.<br>* Honey - Delicious but disturbing.");
+    slide4["slideData"]["singleText"]=("* Carrots - Orange things are not always oranges.<br>* Milk - Cows way of saying Thanks for not eating me.<br>* Honey - Delicious but disturbing.");
 
     slide5["sid"] = "5";
     slide5["hint"]=encodeURIComponent("I wanna throw stuff.");
@@ -60,7 +60,7 @@ define(function() {
     slide5["children"]["fist"]=1;
     slide5["slideData"]={};
     slide5["slideData"]["title"]=encodeURIComponent("Not just for monkeys anymore");
-    slide5["slideData"]["singleText"]=encodeURIComponent("Do you want to fling poo? Sure, we all do.<br>Just remember to wash your hands. Cleanliness is next to Dogliness.");
+    slide5["slideData"]["singleText"]=("Do you want to fling poo? Sure, we all do.<br>Just remember to wash your hands. Cleanliness is next to Dogliness.");
 
 
     structMap["show"]={};

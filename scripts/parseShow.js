@@ -1,4 +1,4 @@
-define(['jquery', "jq_stuff", "createSlides", "../node_modules/xss-filters/dist/xss-filters"], function($, postResult, createSlides, xssFilters) {
+define(['jquery', "jq_stuff", "createSlides", "../node_modules/xss-filters/dist/xss-filters", '../node_modules/markdown/lib/markdown'], function($, postResult, createSlides, xssFilters, Markdown) {
  
   structMap = createSlides();
   // console.log(JSON.stringify(structMap));
@@ -17,7 +17,10 @@ define(['jquery', "jq_stuff", "createSlides", "../node_modules/xss-filters/dist/
 
    function addSlideSingleText(singleTextString) {
     $(document).ready(function() {
-      $("#slideCapsule").append("<div class='row'><p class='singleText'>" + xssFilters.inHTMLData(decodeURIComponent(singleTextString)) + "</p></div>");
+      // $("#slideCapsule").append("<div class='row'><p class='singleText'>" + xssFilters.inHTMLData(markdown.toHTML(decodeURIComponent(singleTextString))) + "</p></div>");
+      $("#slideCapsule").append("<div class='row singleText' id='singleTextDiv'></div>");
+      $("#singleTextDiv").html( markdown.toHTML((singleTextString)) );
+      // $("#singleTextDiv:first-child").addClass("singleText");
     })
   }
 
@@ -27,7 +30,11 @@ define(['jquery', "jq_stuff", "createSlides", "../node_modules/xss-filters/dist/
     $(document).ready(function() {
       var numberOfColumns = Object.keys(columnTextArray).length;
       $("#slideCapsule").append("<div class='row columnText'></div>");
-      columnTextArray.forEach( function(text) {$(".columnText").append("<p class='columnTextP col-1-" + numberOfColumns + "'>" + xssFilters.inHTMLData(decodeURIComponent(text)) + "</p>")} );
+      columnTextArray.forEach( function(text) {$(".columnText").append("<p class='columnTextP col-1-" + numberOfColumns + "'>" + xssFilters.inHTMLData(markdown.toHTML(decodeURIComponent(text))) + "</p>")} );
+      var text = ""
+      columnTextArray.forEach( function(col) { text += markdown.toHTML(decodeURIComponent(col)) } )
+      $(".columnText").html(text)
+      $(".columnText p").addClass("col-1-" + numberOfColumns)
     })
   }
 

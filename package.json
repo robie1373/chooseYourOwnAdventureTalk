@@ -18,7 +18,11 @@
   "homepage": "https://github.com/robie1373/chooseYourOwnAdventureTalk#readme",
   "dependencies": {
     "jquery": "^2.1.4",
+    "markdown": "^0.5.0",
     "requirejs": "^2.1.22",
     "xss-filters": "^1.2.6"
+  },
+  "devDependencies": {
+    "expect": "^1.13.4"
   }
 }
